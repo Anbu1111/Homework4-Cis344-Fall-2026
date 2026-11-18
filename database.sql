@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS race_day;
+USE race_day;
+
+CREATE TABLE IF NOT EXISTS drivers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    driver_name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    car VARCHAR(100) NOT NULL,
+    car_number INT NOT NULL,
+    race_class VARCHAR(50) NOT NULL,
+    signed_up TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
